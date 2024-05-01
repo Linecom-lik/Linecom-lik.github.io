@@ -1,35 +1,13 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Linecom on Github</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Linecom Github Force">
-    <script src="./frame.js"></script>
-    <script>
-        function firstusec(){
-            var usestatus=LEGcookie("firstuse")
-            if (usestatus!=1){
-                pophello();
-            }
-        }
-        function pophello() {
-            alert("未阅读使用条款，即将跳转")
-            window.open("./term.html")
-
-        }
-        document.cookie = "firstuse=1; path=/"
-        var firstuse
-        function consolehello() {
-            console.log("Linecom Web Force")
-            console.log("v0.0.1 | | Stable")
-            console.log("=================")
-            console.log("  Developed by:  ")
-            console.log("  Weidong Cheng  ")
-        }
-    </script>
-</head>
-
-<body onload="consolehello();firstusec()"></body>
-
+    <head>
+        <title>Redirecting...</title>
+        <script>
+            setTimeout(function redir(){
+                location.href="https://www.linecom.net.cn";
+            },5000);
+        </script>
+    </head>
+    <body onload="redir()">
+        <h1>Redirecting to linecom...</h1>
+    </body>
 </html>
