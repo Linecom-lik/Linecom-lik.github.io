@@ -4,7 +4,12 @@
             function changett(newtt){
             var cagett=document.getElementById("tt");
             cagett.innerHTML=newtt;
-            
+                var prog=document.getElementsByClassName("prog")[0];
+                prog.style.display="inline"     
+            }
+            function stopdisplay(){
+                var prog=document.getElementsByClassName("prog")[0];
+                prog.style.display="none"
             }
         </script>
         <style>
@@ -20,15 +25,15 @@
                 background-color: aquamarine;
                 height: 55px;
             }
-            progress.prog{
-                width: 100%;
+            div.title-st{
+                text-align: center;
             }
         </style>
         <title id="tt">主页</title>
         </head>
         <body>
             <div>
-            <progress class="prog">
+            <progress class="prog" style="width:100%;display: none;">
                 </progress>
                 </div>
             <div class="navbar">
@@ -44,4 +49,7 @@
             </button>
             </center>
             </div>
+            <div class="site-wide-body">
+                <div class="title-st">
+                    <h1>MainPage: Finder</h1>
             
