@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+            function changett(newtt){
+            var cagett=document.getElementById("tt");
+            cagett.innerHTML=newtt;
+            
+            }
+        </script>
+        <style>
+            button.nav-select{
+                border-radius: 10px;
+                height: 50px;
+                width: 100px;
+                background-color: aqua;
+                border-style: double;
+                
+            }
+            div.navbar{
+                background-color: aquamarine;
+                height: 55px;
+            }
+            progress.prog{
+                width: 100%;
+            }
+        </style>
+        <title id="tt">主页</title>
+        </head>
+        <body>
+            <div>
+            <progress class="prog">
+                </progress>
+                </div>
+            <div class="navbar">
+                <center>
+            <button onclick="changett('主页')" class="nav-select" id="nav-select">
+                主页
+            </button>
+            <button onclick="changett('设置')" class="nav-select" id="nav-select">
+                设置
+            </button>
+            <button onclick="changett('关于')" class="nav-select" id="nav-select">
+                关于
+            </button>
+            </center>
+            </div>
+            
